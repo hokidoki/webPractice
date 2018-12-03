@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>유효성검사</title>
+	<style>
+		#validation{ 
+			background-color: antiquewhite;
+			width: 100px;
+			height: 100px;
+			border: 1px red solid;
+			margin-top: 10px;
+		}
+	</style>
+	
+</head>
+<body>
+<!--form 테스트 방식-->
+	<form>
+		<p><input type="password" id="password_one" value="1"></p>
+		<input type="password" id="password_two" value="2" onkeyup="validation()">
+<!--		onkeyup 작성중 이벤트 -->
+<!--		<input type="button" onkeyup="password_one">-->
+	</form>
+	<script>
+	//유효성 검사
+		function validation(){
+			//password의 value
+		var pass = document.getElementById("password_one").value;
+		
+		var pass2 = document.getElementById("password_two").value;
+			
+		var validation_set = document.getElementById("validation_form");
+			
+			if(pass===pass2){
+				validation_set.innerHTML = "비밀번호가 일치합니다.";
+			}else{
+				validation_set.innerHTML = "비밀번호가 일치하지않습니다..";
+			}
+			
+		};
+	</script>
+	<div id="validation_form"> </div>
+</body>
+</html>
