@@ -1,0 +1,45 @@
+#containner{
+	border: 1px skyblue solid;
+	width: 500px;
+	height: 400px;
+	vertical-align: middle
+}
+#gameHeader{
+	text-align: center;
+	border-bottom:1px skyblue solid;
+}
+#bettingZone{
+	height: 240px;
+	display: flex;
+	text-align: center;
+}
+#playerZone{
+	height: 90px;
+	border-top: 1px skyblue solid;
+	display: flex;
+	flex-direction: row;
+}
+#bettingZone>div{
+/*	color: ;*/
+	padding-top: 100px;
+}
+.showzone{
+	background-color: red;
+	width: 50px;
+	height: 18px;
+}
+#depart{
+	width: 80%;
+	padding-top: 1%;
+	padding-left: 10px;
+}
+#betZone{
+/*	background: red;*/
+	width: 100px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+input{
+	width: 40px;
+}

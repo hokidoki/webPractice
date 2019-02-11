@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Card Game</title>
+	<link rel="stylesheet" href="cardGame.css" type="text/css">
+	<script src="jquery-3.3.1.js"></script>
+	<script src="cardGame.js"></script>
+</head>
+<body>
+	<div id="containner">
+		<div id="gameHeader">
+			<h2>The Card Game</h2>
+		</div>
+		<div id="bettingZone">
+			<div>Space<input type="text" id="spade"></div>
+			<div>Clover<input type="text" id="clover"></div>
+			<div>Dieamond<input type="text" id="dieamond"></div>
+			<div>Heart<input type="text" id="heart"></div>
+			<div>Zoker<input type="text" id="zoker"></div>
+			<div>Girl<input type="text" id="girl"></div>
+		</div>
+		<div id="playerZone">
+		<div id="depart">
+			<div id="remainingZone" class="show">
+				Remainng
+				<div id="leftMoney" class="showzone"></div>
+			</div>
+			<div id="fundingMoney" class="show">
+				Funding
+				<div id="nowFnding">
+					<div id="howMuchPaied" class="showzone"></div>
+				</div>
+			</div>
+		</div>
+			<div id="betZone">
+				<input type="button" id="betButton" value="Bet">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
