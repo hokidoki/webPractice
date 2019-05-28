@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: skyblue;
+            height: 10vh;
+        }
+        .containner{
+            background-color: slategray;
+            height: 90vh
+        }
+        .aside{
+            display: inline;
+            width: 20%;
+            height: 80vh;
+            background-color: aqua;
+        }
+        .content{
+            width: 60%;
+            height: 90vh;
+        }
+        .float{
+            float: left;
+            margin-bottom: -10vh;
+        }
+        .footer{
+            height: 10vh;
+            margin-top: -10vh;
+            background-color: tomato;
+            clear: both;
+        }
+        </style>
+</head>
+<body>
+<div class="header">
+    header
+</div>
+<div class="containner">
+    <div class="float aside">aside</div>
+    <div class="float content">content</div>
+    <div class="float aside">aside</div>
+    <div class="footer">
+            footer
+        </div>
+</div>
+
+</body>
+
+</html>
